@@ -1,0 +1,961 @@
+untuk tipe url dia tuh gini 
+https://bounty-nginx.datashield.co/scraping/29
+jadi dia ada cookies lu bisa liat di foto seperti apa htmlnya , lalu bakal ginihttps://bounty-nginx.datashield.co/scraping/29 sampe 20000 
+seperti yang lu tau ada bot detector yang blokir di awal pasti ada , gw masuk as human aja harus melalui berbagai pengecekan 
+
+
+Jump to Content
+DataDome
+Documentation
+API
+Changelog
+Test your site
+Watch a demo
+Dashboard
+DataDome Online Fraud & Bot Management
+Home
+Documentation
+API Reference
+Changelog
+Documentation
+
+    Getting Started with DataDome
+    Status
+    Support
+    Regional Endpoints
+
+Server-side integration
+
+    Akamai EdgeWorkers
+
+Apache
+Apigee
+Arc XP
+AWS CloudFront
+Bunny
+Cloudflare Worker
+Edgee
+Envoy
+F5 iRules
+Fasterize
+Fastly CDN (VCL)
+Fastly Compute
+Go
+Google Cloud Load Balancer
+HAProxy
+IIS
+ASP.NET Core
+Java
+Keycloak
+Kong
+Magento
+Next.js
+Nginx
+Node.js
+MuleSoft
+OpenResty
+POQ Commerce
+Ruby
+Salesforce Commerce Cloud
+Traefik
+Tyk
+Varnish
+
+    API Integration
+
+Client-side integration
+
+    JavaScript Tag
+
+Android SDK
+iOS SDKs
+React Native SDKs
+Flutter SDKs
+
+Dashboard
+
+    Set up DataDome Dashboard
+
+Manage DataDome Protection
+Analyze your traffic
+Export/Report
+Manage account
+
+    Traffic Queries Syntax
+
+Account Protect
+
+    Getting started
+    Server-side integration
+
+Dashboard
+
+AD PROTECT
+
+    Getting Started
+    Ad Networks integrations
+
+Page Protect
+
+    Responsibility Matrix
+    AI script explanation
+
+Advanced
+
+    Bot Authentication
+    Cookies and stored data
+    DataDome CAPTCHA
+    Device Check
+    Key rotation
+    Integrate DataDome with your CDN
+    AI/LLM Monetization
+
+    Custom Data Enrichment
+
+Third Party Integration
+
+    Logs Enrichment Integration
+    SIEM/SOC Integration
+    Terraform provider
+
+Webhook/Notification Integration
+
+Bot Authentication
+
+How to get your bots authenticated?
+
+DataDome is a cyber security solution that protects websites and APIs against bot traffic.
+
+Any automated request coming from an unauthenticated bot is categorized as a "Bad Bot" and is blocked by default.
+
+DataDome classifies and authenticates thousands of Commercial bots employed by hundreds of companies. Our customers can decide to authorize them based on their own bot policy.
+
+If you would like to be part of the Commercial bot category, you will need to:
+
+    Use a dedicated UserAgent
+    Set up one of the authentication mechanisms detailed below
+    And finally reach our support team
+
+1. Reverse DNS
+
+DataDome can authenticate Commercial bots by running a two-way RDNS/DNS lookup.
+This is a strong and real time solution, which is used by major search engines like Google or Bing.
+2. Static IP
+
+In case your bot is using static IP addresses, you can share the list of all possible IP addresses with us.
+3. Dynamic IP List
+
+DataDome can authenticate Commercial bots by fetching their IP list.
+We have a process in place to download and update the IP list (similar to Pingdom and Uptime).
+You simply have to create and maintain a file (CSV, JSON, Plaintext) including all IPs used by your bots.
+4. Private AS
+
+DataDome can authenticate Commercial bots by checking a combination of AS numbers. In order to be secure, the AS must be a private corporater AS, not a common host AS (AWS, GCP, Hetzner).
+
+Updated 4 days ago
+AI script explanation
+Cookies and stored data
+Did this page help you?
+
+    Table of Contents
+        1. Reverse DNS
+        2. Static IP
+        3. Dynamic IP List
+        4. Private AS
+
+
+Jump to Content
+DataDome
+Documentation
+API
+Changelog
+Test your site
+Watch a demo
+Dashboard
+DataDome Online Fraud & Bot Management
+Home
+Documentation
+API Reference
+Changelog
+Documentation
+
+    Getting Started with DataDome
+    Status
+    Support
+    Regional Endpoints
+
+Server-side integration
+
+    Akamai EdgeWorkers
+
+Apache
+Apigee
+Arc XP
+AWS CloudFront
+Bunny
+Cloudflare Worker
+Edgee
+Envoy
+F5 iRules
+Fasterize
+Fastly CDN (VCL)
+Fastly Compute
+Go
+Google Cloud Load Balancer
+HAProxy
+IIS
+ASP.NET Core
+Java
+Keycloak
+Kong
+Magento
+Next.js
+Nginx
+Node.js
+MuleSoft
+OpenResty
+POQ Commerce
+Ruby
+Salesforce Commerce Cloud
+Traefik
+Tyk
+Varnish
+
+    API Integration
+
+Client-side integration
+
+    JavaScript Tag
+
+Android SDK
+iOS SDKs
+React Native SDKs
+Flutter SDKs
+
+Dashboard
+
+    Set up DataDome Dashboard
+
+Manage DataDome Protection
+Analyze your traffic
+Export/Report
+Manage account
+
+    Traffic Queries Syntax
+
+Account Protect
+
+    Getting started
+    Server-side integration
+
+Dashboard
+
+AD PROTECT
+
+    Getting Started
+    Ad Networks integrations
+
+Page Protect
+
+    Responsibility Matrix
+    AI script explanation
+
+Advanced
+
+    Bot Authentication
+    Cookies and stored data
+    DataDome CAPTCHA
+    Device Check
+    Key rotation
+    Integrate DataDome with your CDN
+    AI/LLM Monetization
+
+    Custom Data Enrichment
+
+Third Party Integration
+
+    Logs Enrichment Integration
+    SIEM/SOC Integration
+    Terraform provider
+
+Webhook/Notification Integration
+
+Cookies and stored data
+
+DataDome stores the following data on clients such as web browsers:
+
+Name
+	
+
+Type
+	
+
+Purpose
+	
+
+Expiration
+	
+
+Size
+	
+
+Platform
+
+datadome
+	
+
+Cookie
+	
+
+Used for both server-side and client-side detection to assess the legitimacy of a request. The cookie's data is encrypted for security and does not contain any personally identifiable information (PII).
+	
+
+1 year
+	
+
+128 bytes
+	
+
+Web, Mobile
+
+ddSession
+	
+
+Local Storage
+	
+
+Duplicate of the datadome cookie.
+Only exists when the sessionByHeader option is enabled on the JS Tag.
+	
+
+1 year
+	
+
+128 bytes
+	
+
+Web
+
+ddOriginalReferrer
+	
+
+Session Storage
+	
+
+Stores the referrer value when a Device Check or CAPTCHA is triggered for later restoration.
+	
+
+End of session
+	
+
+Up to 2048 bytes
+	
+
+Web
+
+    📘
+    Recommendations
+
+    Operations such as blocking, tampering, or deleting the data listed above can result in issues or unexpected behaviors.
+
+    We recommend to watch out for mechanisms that can run such operations and do any necessary actions to prevent them.
+
+Updated 4 days ago
+Bot Authentication
+DataDome CAPTCHA
+Did this page help you?
+Jump to Content
+DataDome
+Documentation
+API
+Changelog
+Test your site
+Watch a demo
+Dashboard
+DataDome Online Fraud & Bot Management
+Home
+Documentation
+API Reference
+Changelog
+Documentation
+
+    Getting Started with DataDome
+    Status
+    Support
+    Regional Endpoints
+
+Server-side integration
+
+    Akamai EdgeWorkers
+
+Apache
+Apigee
+Arc XP
+AWS CloudFront
+Bunny
+Cloudflare Worker
+Edgee
+Envoy
+F5 iRules
+Fasterize
+Fastly CDN (VCL)
+Fastly Compute
+Go
+Google Cloud Load Balancer
+HAProxy
+IIS
+ASP.NET Core
+Java
+Keycloak
+Kong
+Magento
+Next.js
+Nginx
+Node.js
+MuleSoft
+OpenResty
+POQ Commerce
+Ruby
+Salesforce Commerce Cloud
+Traefik
+Tyk
+Varnish
+
+    API Integration
+
+Client-side integration
+
+    JavaScript Tag
+
+Android SDK
+iOS SDKs
+React Native SDKs
+Flutter SDKs
+
+Dashboard
+
+    Set up DataDome Dashboard
+
+Manage DataDome Protection
+Analyze your traffic
+Export/Report
+Manage account
+
+    Traffic Queries Syntax
+
+Account Protect
+
+    Getting started
+    Server-side integration
+
+Dashboard
+
+AD PROTECT
+
+    Getting Started
+    Ad Networks integrations
+
+Page Protect
+
+    Responsibility Matrix
+    AI script explanation
+
+Advanced
+
+    Bot Authentication
+    Cookies and stored data
+    DataDome CAPTCHA
+    Device Check
+    Key rotation
+    Integrate DataDome with your CDN
+    AI/LLM Monetization
+
+    Custom Data Enrichment
+
+Third Party Integration
+
+    Logs Enrichment Integration
+    SIEM/SOC Integration
+    Terraform provider
+
+Webhook/Notification Integration
+
+DataDome CAPTCHA
+Why DataDome CAPTCHA?
+
+    We are obsessed with privacy. Our CAPTCHA is 100% homemade with zero third-party involvement. Data is processed at the edge, locally, and we offer flexible, adaptable data retention options to fit with local legal requirements.
+    Our user experience is unmatched. With DataDome’s CAPTCHA, you’re guaranteed a consistent, stable UX—whether on a mobile or desktop device.
+    First-class protection in real time. Our CAPTCHA includes CAPTCHA farm prevention, enhanced signal detection, and built-in replay detection.
+    Extreme accessibility. Our CAPTCHA and its customization options are designed to help you meet the Level AA criteria of the WCAG 2.2 standards. Our audio challenge supports 58 audio languages—the most of any current offering in the market.
+
+Which languages are supported by DataDome CAPTCHA?
+
+Default language is English (en). We support the following languages out of the box:
+Languages	Accept-Language code	Audio
+Afrikaans	af	
+Albanian	sq	Supported
+Amharic	am	
+Arabic	ar	Supported
+Armenian	hy	Supported
+Azerbaijani	az	Supported
+Basque	eu	
+Belarusian	be	
+Bengali	bn	Supported
+Bosnian	bs	Supported
+Brazilian Portuguese	pt-br	
+Bulgarian	bg	Supported
+Burmese	my	Supported
+Catalan	ca	Supported
+Central Khmer	km	
+Chinese	zh	Supported
+Chinese (Hong Kong)	zh-hk	
+Chinese (Macau)	zh-mo	
+Chinese (Taiwan)	zh-tw	
+Chinese (Hans)	zh-hans	
+Chinese (Hant)	zh-hant	
+Croatian	hr	Supported
+Czech	cs	Supported
+Danish	da	Supported
+Dutch	nl	Supported
+English	en	Supported
+Esperanto	eo	
+Estonian	et	Supported
+Farsi	fa	Supported
+Filipino	fil	Supported
+Finnish	fi	Supported
+French	fr	Supported
+Galician	gl	
+Georgian	ka	Supported
+German	de	Supported
+Gujarati	gu	Supported
+Haitian	ht	
+Hausa	ha	
+Hebrew	he	Supported
+Hindi	hi	Supported
+Hungarian	hu	Supported
+Icelandic	is	Supported
+Igbo	ig	
+Indonesian	id	Supported
+Irish	ga	
+Italian	it	Supported
+Japanese	ja	Supported
+Kannada	kn	Supported
+Kazakh	kk	Supported
+Kinyarwanda	rw	
+Kirghiz	ky	
+Korean	ko	Supported
+Kurdish	ku	
+Lao	lo	
+Latin	la	
+Latvian	lv	Supported
+Lithuanian	lt	Supported
+Luxembourgish	lb	
+Macedonian	mk	Supported
+Malagasy	mg	
+Malay	ms	
+Malayalam	ml	Supported
+Maltese	mt	
+Maori	mi	
+Marathi	mr	Supported
+Modern Greek	el	Supported
+Mongolian	mn	
+Nepali	ne	
+Norwegian	no	Supported
+Norwegian (Bokmal) (Norway)	nb	
+Norwegian (Nynorsk) (Norway)	nn	
+Nyanja	ny	
+Panjabi	pa	Supported
+Polish	pl	Supported
+Portuguese	pt	Supported
+Pushto	ps	
+Romanian	ro	Supported
+Russian	ru	Supported
+Samoan	sm	
+Scottish Gaelic	gd	
+Serbian	sr	Supported
+Shona	sn	
+Sindhi	sd	
+Sinhala	si	Supported
+Slovak	sk	
+Slovenian	sl	Supported
+Somali	so	
+Southern Sotho	st	
+Spanish	es	Supported
+Sudanese	su	
+Swahili	sw	Supported
+Swedish	sv	
+Tagalog	tl	Supported
+Tajik	tg	
+Tamil	ta	Supported
+Tatar	tt	
+Telugu	te	Supported
+Thai	th	Supported
+Turkish	tr	Supported
+Turkmen	tk	
+Ukrainian	uk	Supported
+Urdu	ur	Supported
+Uzbek	uz	
+Vietnamese	vi	Supported
+Welsh	cy	
+Xhosa	xh	
+Yiddish	yi	
+Yoruba	yo	
+Zulu	zu	
+Which browsers are supported by DataDome CAPTCHA?
+
+    Chrome ≥ 60
+    Firefox ≥ 55
+    Edge ≥ 80
+    Opera ≥ 50
+    Yandex ≥ 14
+    Safari ≥ 11
+
+How can I use DataDome CAPTCHA?
+
+DataDome CAPTCHA is enabled by default. You can configure it in the dashboard:Management > Response Pages.
+Does DataDome CAPTCHA work in China (Behind the China Firewall)?
+
+Yes. It has been tested from several towns in China.
+How can I track the impact of DataDome CAPTCHA on my customer journey?
+
+You can track the behavior of DataDome CAPTCHA in the dashboard: Responses > Captcha. You will find detailed analytics related to the outcomes of the CAPTCHA challenge, the duration, false positive rates and much more.
+How can I track the impact of DataDome CAPTCHA in my own Analytics Tools ?
+
+You can provide us any analytics javascript snippet (Google Analytics, Adobe Analytics, Xiti, UseFathom, ...) to track the captcha page displayed to your customer inside your own analytics tool.
+
+Please reach out to our support team with the your analytics javascript snippet and they will integrate it inside your captcha page.
+How can I test DataDome CAPTCHA on my website or application ?
+
+While it's possible to trigger CAPTCHA using custom rules, the response could be overridden by our Threat Detection models for security purposes. If needed, you can reach out to our support team who will assist you in defining a test set-up.
+What data is collected by DataDome CAPTCHA?
+
+No personal information is collected by DataDome CAPTCHA. Only technical and behavioral details are inspected, including:
+
+    Screen details:
+        max resolution
+        current resolution
+        screen size
+        video quality
+        touch actions supported
+    Environment information:
+        audio and video codecs used
+        supported media extensions
+        active plugins
+        checks on browser type and version
+    Hardware information:
+        CPUs
+        GPUs
+    Javascript challenges:
+        JS functions whose results prove the consistency of the collected information
+        Rendering of canvases
+        Execution times
+    User interaction with the CAPTCHA page and device dynamics:
+        mouse dynamics
+        touch and scrolling dynamics
+        keystrokes dynamics
+        device movement dynamics
+
+Updated 4 days ago
+Cookies and stored data
+Device Check
+Did this page help you?
+
+    Table of Contents
+        Why DataDome CAPTCHA?
+        Which languages are supported by DataDome CAPTCHA?
+        Which browsers are supported by DataDome CAPTCHA?
+        How can I use DataDome CAPTCHA?
+        Does DataDome CAPTCHA work in China (Behind the China Firewall)?
+        How can I track the impact of DataDome CAPTCHA on my customer journey?
+        How can I track the impact of DataDome CAPTCHA in my own Analytics Tools ?
+        How can I test DataDome CAPTCHA on my website or application ?
+        What data is collected by DataDome CAPTCHA?
+
+
+
+Jump to Content
+DataDome
+Documentation
+API
+Changelog
+Test your site
+Watch a demo
+Dashboard
+DataDome Online Fraud & Bot Management
+Home
+Documentation
+API Reference
+Changelog
+Documentation
+
+    Getting Started with DataDome
+    Status
+    Support
+    Regional Endpoints
+
+Server-side integration
+
+    Akamai EdgeWorkers
+
+Apache
+Apigee
+Arc XP
+AWS CloudFront
+Bunny
+Cloudflare Worker
+Edgee
+Envoy
+F5 iRules
+Fasterize
+Fastly CDN (VCL)
+Fastly Compute
+Go
+Google Cloud Load Balancer
+HAProxy
+IIS
+ASP.NET Core
+Java
+Keycloak
+Kong
+Magento
+Next.js
+Nginx
+Node.js
+MuleSoft
+OpenResty
+POQ Commerce
+Ruby
+Salesforce Commerce Cloud
+Traefik
+Tyk
+Varnish
+
+    API Integration
+
+Client-side integration
+
+    JavaScript Tag
+
+Android SDK
+iOS SDKs
+React Native SDKs
+Flutter SDKs
+
+Dashboard
+
+    Set up DataDome Dashboard
+
+Manage DataDome Protection
+Analyze your traffic
+Export/Report
+Manage account
+
+    Traffic Queries Syntax
+
+Account Protect
+
+    Getting started
+    Server-side integration
+
+Dashboard
+
+AD PROTECT
+
+    Getting Started
+    Ad Networks integrations
+
+Page Protect
+
+    Responsibility Matrix
+    AI script explanation
+
+Advanced
+
+    Bot Authentication
+    Cookies and stored data
+    DataDome CAPTCHA
+    Device Check
+    Key rotation
+    Integrate DataDome with your CDN
+    AI/LLM Monetization
+
+    Custom Data Enrichment
+
+Third Party Integration
+
+    Logs Enrichment Integration
+    SIEM/SOC Integration
+    Terraform provider
+
+Webhook/Notification Integration
+
+Device Check
+What is Device Check?
+
+Device Check is a verification process that runs on the end user’s device, without the need for any user interaction. It can be loaded by web browsers and mobile applications, completely preserving end users’ privacy. Its purpose is to spot any type of automation frameworks, spoofed environments or programmatic access to the interfaces.
+
+In simple terms, Device Check acts like a CAPTCHA, without prompting any challenge to the end user. The verification runs automatically:
+
+    if the requester is a legitimate human user, the requested content is loaded
+    if the request comes from a bot, it is blocked or additionally challenged
+
+Why Device Check?
+
+Device Check supports DataDome’s bot protection with several benefits:
+
+    sophisticated and evasive bots can be detected from their first requests;
+    limited friction on user experience, reducing the false positive rate and the usage of captcha;
+    the protection level can be increased in sensitive contexts, proposing a more aggressive response;
+    users’ privacy is completely preserved, as no personal information is collected during the verification.
+
+How does Device Check work?
+
+Device Check is used in two scenarios:
+
+    When a bot is detected by DataDome, but the evidence of bot activity is not strong enough to block it or challenge it with a captcha
+    When a request is suspicious and the requested resource or the request context presents potential risks
+
+In both cases, a JS code is executed client-side, to collect hundreds of signals and perform several checkpoints on the device and environment. The result of the check is then sent back to DataDome, who sends back the final result, either blocking a malicious actor or redirecting to the requested resource. If additional information is still needed to make the final decision, DataDome can challenge the requester with a CAPTCHA.
+
+Since no user interaction is required, behavioral models are not applied to analyze the signals collected by Device Check. Instead, client and device fingerprinting techniques are leveraged, together with specific automated challenges capable of detecting spoofed environments and devices.
+
+Device Check is fully operational on web browsers, mobile browsers and mobile apps.
+How often are end users verified with Device Check?
+
+Device Check is only applied for suspicious requests, hence the majority of legitimate end users should never be verified by it. Nevertheless, there are contexts where the usage of a client-side check is particularly beneficial for protection, resulting in a wider usage on legitimate users. In any case, once a legitimate user is verified with Device Check, DataDome remembers the outcome and does not repeat the verification.
+Visual customization
+
+In the relatively rare occasions when a legitimate end user’s device is verified by DataDome’s Device Check, a simple page is displayed, informing about the ongoing verification.
+
+The page is translated in 38 languages, and administrators can customize it per domain directly from DataDome Dashboard, under “Management” > “Response Pages”.
+
+The available options for customization are:
+
+    Upload a logo,
+    Choice of the two colors to render the spinner element,
+    The duration before redirection to the requested content (to let end users the time to read the short message indicating that a verification is being performed).
+    An “invisible mode” is also available, in which case no visual content is displayed to the end user, and the redirection to the target resource is triggered as soon as the check completes.
+
+Is Device Check compatible with any device?
+
+If DataDome is correctly integrated, Device Check is compatible with all web browsers and mobile apps.
+
+DataDome’s JS Tag must be correctly integrated in the web pages that originate XHR/fetch requests protected by DataDome.
+
+Like DataDome CAPTCHA, Device Check is supported for the following browsers:
+
+    Chrome ≥ 60
+    Firefox ≥ 55
+    Edge ≥ 80
+    Opera ≥ 50
+    Yandex ≥ 14
+    Safari ≥ 9.1
+    Internet Explorer 11 (Windows 10 only)
+
+What data is collected by Device Check?
+
+No personal information is collected by Device Check. Only technical details are inspected, including:
+
+    Screen details:
+        max resolution
+        current resolution
+        screen size
+        video quality
+        touch actions supported
+    Environment information:
+        audio and video codecs used
+        supported media extensions
+        active plugins
+        checks on browser type and version
+    Hardware information:
+        CPUs
+        GPUs
+    Javascript challenges:
+        JS functions whose results prove the consistency of the collected information
+        Rendering of canvases
+        Execution times
+
+How to activate Device Check?
+
+There is no need for activating Device Check: it is available by default for all customers and it is triggered based on the outcomes of DataDome’s detection models. It can also be forced by customers defining a custom rule or overriding a model's configuration.
+Does Device Check work in China (Behind the China Firewall)?
+
+Yes. It has been tested in several towns in China.
+
+Updated 4 days ago
+DataDome CAPTCHA
+Key rotation
+Did this page help you?
+
+    Table of Contents
+        What is Device Check?
+        Why Device Check?
+        How does Device Check work?
+        How often are end users verified with Device Check?
+        Visual customization
+        Is Device Check compatible with any device?
+        What data is collected by Device Check?
+        How to activate Device Check?
+        Does Device Check work in China (Behind the China Firewall)?
+
+Key rotation
+
+In today's digital landscape, protecting your integrations with third parties is paramount. As part of our ongoing efforts to uphold the highest standards of security, we emphasize the importance of key rotation for our keys. This documentation aims to provide comprehensive insights into the practice of key rotation within our product framework. By understanding and implementing key rotation effectively, you can bolster your security posture, mitigating potential risks and ensuring the integrity of your integration with DataDome. Let's delve into the intricacies of key rotation and see how to perform this rotation.
+How to perform a key rotation?
+Step 1 - Identify the Key to Sunset
+
+Navigate to the Integrations tab within the Management section. Ensure you have the Admin role for access. Locate the key you wish to sunset along with its type from the listing. There are currently four different types of keys eligible for rotation:
+
+    Server side key
+    Management API Key - Full Access
+    Management API Key - Read-only Access
+    Account Protect Key
+
+Step 2 - Generate a New Key of the Same Type
+
+Once you've identified the key's type, proceed to create a new key of the same type. Click on the “Generate New Key” button positioned at the top right corner, then select the appropriate key type. A pop-up window will prompt you to name the key.
+
+Note that the key name is immutable after creation, so choose wisely.
+
+Confirm the action by clicking on “Generate Key,” and the new key will appear in the listing.
+Step 3 - Activate Your New Key
+
+By default, a newly generated key is in “Deactivated” status, rejecting any traffic or calls.
+
+Switch its status to “Activated” by clicking on the extra actions button at the end of the new key line, then select “Activate.”
+
+Confirm the activation in the pop-up window by clicking on “Activate key.”
+
+The key status will change to “Activated,” ready to accept traffic or calls.
+Step 4 - Replace the Key in Your System
+
+Replace the key you wish to sunset with the newly created one in your system.
+
+Ensure that your system behaves as expected after the replacement to maintain service continuity.
+Step 5 - Verify the Sunset Key Is No Longer in Use
+
+After replacing the key, ensure it is no longer in use. Utilize the “Last usage” column, which displays the date and time of the key's last usage.
+Step 6 - Deactivate the Sunset Key
+
+If the “Last usage” aligns with the replacement performed in Step 4, proceed with deactivating the key.
+
+Click on the extra actions button at the end of the new key line, then select “Deactivate.”
+
+Confirm the deactivation by clicking on “Deactivate key” in the pop-up window.
+
+The key status will change to “Deactivated,” refusing all traffic or calls.
+
+We recommend a 1-month observation period before deletion.
+Step 7 - Delete the Sunset Key
+
+Once you're certain it's safe to delete the key, return to the Integrations tab in the Management section.
+
+Identify the key for deletion, click on the extra actions button at the end of the line, then select “Delete.”
+
+Confirm the deletion by entering the key name and clicking on “Delete key” in the pop-up window.
+
+Deleting a key is irreversible, so ensure your decision is final.
+
+The key will no longer appear in the listing, signifying the completion of the key rotation process.
+
+Congratulations on successfully rotating your key!
